@@ -7,6 +7,7 @@
 @media (max-width: 1024px) {
   .banner_menu {
     justify-content: flex-end;
+    top: 15px;
   }
   .bm_left {
     display: none;
@@ -60,6 +61,7 @@
   .slider h2 {
     margin-top: 140px;
     font-size: 24px;
+    margin-left: 10px;
   }
   .slider h2 em {
     font-size: 20px;
@@ -67,6 +69,7 @@
   .slider p {
     font-size: 14px;
     padding-top: 25px;
+    margin-left: 10px;
   }
   .slider h2::after {
     width: 150px;
