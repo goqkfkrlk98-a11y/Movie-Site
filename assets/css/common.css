@@ -1,0 +1,13 @@
+/* skip 메뉴 */
+
+/* 가운데 영역 */
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* row 영역 */
+.row {
+  padding: 0 16px;
+}
