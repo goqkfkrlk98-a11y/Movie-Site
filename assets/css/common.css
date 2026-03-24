@@ -11,3 +11,8 @@
 .row {
   padding: 0 16px;
 }
+
+/* icon */
+.icon {
+  background-image: url(../icon/icon.png);
+}
