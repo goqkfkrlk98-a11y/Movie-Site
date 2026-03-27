@@ -1,0 +1,300 @@
+/* help 영역 */
+.help {
+  padding-bottom: 100px;
+  display: flex;
+  gap: 2%;
+}
+.help article {
+  flex: 1;
+  /* --> 갭을 제외한 나머지 값을 3이서 나눠가짐 */
+}
+.help article > div {
+  border: 1px solid #dbdbdb;
+  height: 350px;
+}
+.help article:last-child > div {
+  border: 0 none;
+}
+.help article h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* 공지사항 */
+.notice {
+  padding: 17px;
+  position: relative;
+}
+.notice > ul {
+  display: flex;
+}
+.notice ul li {
+  text-align: center;
+  margin-left: -1px;
+}
+.notice ul li > a {
+  display: block;
+  width: 80px;
+  padding: 10px 20px;
+  border: 1px solid #8b8b8b;
+  font-size: 15px;
+  color: #353535;
+  background-color: #fff;
+}
+.notice ul li.active > a {
+  background-color: #c4c4c4;
+}
+.notice ul li ul {
+  width: 90%;
+  position: absolute;
+  top: 70px;
+  left: 17px;
+}
+.notice ul li ul li {
+  width: 100%;
+  padding: 17px 0;
+  text-align: left;
+  border-bottom: 1px solid #8b8b8b;
+  box-sizing: border-box;
+}
+.notice ul li ul li:last-child {
+  border-bottom: 0 none;
+}
+.notice ul li ul li dt .bar {
+  margin-right: 10px;
+  position: relative;
+}
+.notice ul li ul li dt .bar::after {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #aaaaaa;
+  position: absolute;
+  top: 3px;
+  right: -6px;
+}
+.notice ul li ul li dt em {
+  color: #8b8b8b;
+}
+.notice ul li ul li dd {
+  color: #8b8b8b;
+  padding-top: 3px;
+
+  /* 한줄 생략 효과 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 할인카드 */
+.card {
+  padding: 17px;
+}
+.card ul {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.card ul li {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #8b8b8b;
+}
+.card ul li a {
+  display: flex;
+}
+.card ul li a span.card_img {
+  width: 115px;
+  margin-right: 5%;
+}
+.card ul li a span.desc {
+  display: flex;
+  flex-direction: column;
+}
+.card ul li a span.desc strong {
+  font-size: 16px;
+  font-weight: 700;
+  color: #202020;
+  display: block;
+}
+.card ul li a span.desc em {
+  font-size: 14px;
+  color: #8b8b8b;
+}
+
+/* 고객센터 */
+.service {
+  /* padding: 17px; */
+}
+.service ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service ul li {
+  width: 50%;
+  height: 193px;
+  text-align: center;
+  border: 1px solid #8b8b8b;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service ul li:nth-child(1) {
+  border-right: 0;
+  border-bottom: 0;
+}
+.service ul li:nth-child(2) {
+  border-bottom: 0;
+}
+.service ul li:nth-child(3) {
+  border-right: 0;
+}
+.service ul li a {
+  display: block;
+  width: 100%;
+}
+.service ul li a span {
+}
+.service ul li a span img {
+  width: 84px;
+}
+.service ul li a strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #555555;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1290px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .help {
+    flex-wrap: wrap;
+  }
+  .help article {
+    flex: none;
+  }
+  .help_box1 {
+    width: 49%;
+  }
+  .help_box2 {
+    width: 49%;
+  }
+  .help_box3 {
+    width: 100%;
+  }
+  .service ul li {
+    width: 25%;
+    border: 0 none;
+  }
+  .help article:last-child > div {
+    border: 1px solid #c2c2c2;
+    height: 193px;
+    margin-top: 20px;
+  }
+  .help article.help_box3 h3 {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .help {
+    padding: 0;
+  }
+  .new {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  #help {
+    background-color: #d9d9d9;
+  }
+  #help .row {
+    padding: 0;
+  }
+  .help {
+    padding: 0;
+  }
+  .help article h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .help_box1 {
+    width: 100%;
+    background: #fff;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  .help_box2 {
+    margin-top: 12px;
+    width: 100%;
+    background: #fff;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+  .help_box3 {
+    margin-top: 12px;
+    width: 100%;
+    background: #fff;
+    padding: 24px 0;
+    box-sizing: border-box;
+  }
+  .help article:last-child > div {
+    border: 0 none;
+    height: 133px;
+    margin-top: 0;
+  }
+  .service ul li {
+    height: 133px;
+  }
+  .service ul li a strong {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+@media (max-width: 600px) {
+  #help {
+    padding: 12px;
+  }
+  .help article:last-child > div {
+    height: 230px;
+  }
+  .service ul li {
+    width: 50%;
+    height: 120px;
+  }
+  .service ul li a span img {
+    width: 60px;
+  }
+  .help_box1 {
+    padding: 16px;
+  }
+  .help_box2 {
+    padding: 16px;
+  }
+  .help_box3 {
+    padding: 16px 0;
+  }
+}
+@media (max-width: 480px) {
+  .notice ul li > a {
+    width: 70px;
+    padding: 10px 8px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .card ul li a span.desc strong {
+    font-size: 14px;
+  }
+  .card ul li a span.desc em {
+    font-size: 13px;
+  }
+}

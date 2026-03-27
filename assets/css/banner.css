@@ -214,6 +214,9 @@
   .container {
     width: 100%;
   }
+  #banner {
+    padding-top: 58px;
+  }
 }
 @media (max-width: 1024px) {
   .banner_menu {

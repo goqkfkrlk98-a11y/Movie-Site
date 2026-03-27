@@ -1,0 +1,151 @@
+/* footer 영역 */
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_info {
+  padding: 50px 0;
+}
+.footer_info h2 {
+  width: 150px;
+}
+.footer_info ul {
+  padding: 15px 0;
+}
+.footer_info ul li {
+  display: inline-block;
+  padding-right: 16px;
+  position: relative;
+  white-space: nowrap;
+}
+.footer_info ul li::after {
+  content: "";
+  width: 1px;
+  height: 11px;
+  background-color: #7c7c7cbb;
+  position: absolute;
+  top: 4px;
+  left: 55px;
+}
+.footer_info ul li:nth-child(3):after {
+  top: 4px;
+  left: 137px;
+}
+.footer_info ul li:nth-child(5):after {
+  top: 4px;
+  left: 105px;
+}
+.footer_info ul li:last-child::after {
+  width: 0;
+  height: 0;
+}
+.footer_info ul li a {
+  color: #7c7c7cbb;
+}
+.footer_info address p {
+  color: #7c7c7cbb;
+  padding-bottom: 15px;
+}
+.footer_info address p span.bar2 {
+  position: relative;
+  padding-right: 18px;
+}
+.footer_info address p span.bar2::after {
+  content: "";
+  width: 1px;
+  height: 11px;
+  background-color: #7c7c7cbb;
+  position: absolute;
+  top: 4px;
+  right: 6px;
+}
+.footer_sns {
+}
+.footer_sns ul {
+}
+.footer_sns ul li {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+}
+
+.footer_sns ul li.s1 {
+  background-position: 5px 610px;
+}
+.footer_sns ul li.s2 {
+  background-position: -28px 610px;
+}
+.footer_sns ul li.s3 {
+  background-position: -58px 610px;
+}
+.footer_sns ul li.s4 {
+  background-position: -89px 610px;
+}
+.footer_sns ul li.s5 {
+  background-position: -120px 610px;
+}
+
+.footer_sns ul li.s1:hover {
+  background-position: 5px 610px;
+}
+.footer_sns ul li.s2 {
+  background-position: -28px 610px;
+}
+.footer_sns ul li.s3 {
+  background-position: -58px 610px;
+}
+.footer_sns ul li.s4 {
+  background-position: -89px 610px;
+}
+.footer_sns ul li.s5 {
+  background-position: -120px 610px;
+}
+
+.footer_sns .tel {
+  text-align: right;
+  padding-top: 2px;
+}
+.footer_sns .tel a {
+  color: #7c7c7cbb;
+  font-size: 21px;
+}
+.footer_sns .tel a em {
+  color: #d9d9d9a6;
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 1290px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 960px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .footer_sns {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .footer_sns .tel {
+    display: none;
+  }
+  .footer_info h2 {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  #footer .row {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 600px) {
+}
+@media (max-width: 480px) {
+}
